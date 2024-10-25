@@ -141,8 +141,8 @@ resource "aws_elastic_beanstalk_environment" "my-env" {
   solution_stack_name = "64bit Amazon Linux 2 v5.9.6 running Node.js 16"
   setting {
     namespace = "aws:autoscaling:launchconfiguration"
-    name      = "IamInstanceProfile"
-    value     = aws_iam_instance_profile.elastic_beanstalk_instance_profile.name
+      name      = "IamInstanceProfile"
+      value     = aws_iam_instance_profile.elastic_beanstalk_instance_profile.name
   }
   setting {
     namespace = "aws:elasticbeanstalk:environment"
